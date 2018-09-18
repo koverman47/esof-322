@@ -1,7 +1,7 @@
 package assignment2;
 
 
-public abstract class ATool {
+public abstract class MathTool {
     protected SortBehavior sortBehavior;
     
     protected int[] mathSort(int[] data) {
