@@ -7,6 +7,7 @@ public class InsertionSort implements SortBehavior {
     
     @Override
     public int[] sort(int[] data) {
+        System.out.println("Insertion Sort Called!");
         for(int i = 1; i < data.length; i++) {
             int j = i;
             int temp = data[i];

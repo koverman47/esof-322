@@ -7,6 +7,7 @@ public class MergeSort implements SortBehavior {
     
     @Override
     public int[] sort(int[] data) {
+        System.out.println("Merge Sort Called!");
         if(data.length == 1) { // Recursion base case
             return data;
         }

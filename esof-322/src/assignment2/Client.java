@@ -33,8 +33,9 @@ public class Client {
         }
         
         int[] data = {0, 4, 8, 3, 2, 5, 6, 9, 7, 1}; // Data to be sorted
+        System.out.println("To be sorted: " + Arrays.toString(data));
         
-        System.out.println(Arrays.toString(tool.mathSort(data))); // Print sorted array
+        System.out.println("Output: " + Arrays.toString(tool.mathSort(data))); // Print sorted array
 
         /*
          * Prompt user to change the sorting method
@@ -58,8 +59,9 @@ public class Client {
          * Recreated the data array because Java passes arrays by reference
          */
         int[] data2 = {0, 4, 8, 3, 2, 5, 6, 9, 7, 1};
+        System.out.println("To be sorted: " + Arrays.toString(data2));
         
-        System.out.println(Arrays.toString(tool.mathSort(data2))); // Print sorted array
+        System.out.println("Output: " + Arrays.toString(tool.mathSort(data2))); // Print sorted array
         
         console.close();
     }
