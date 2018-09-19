@@ -1,3 +1,6 @@
+/*
+ * Just checking that the sorting methods were implemented correctly
+*/
 
 package assignment2;
 

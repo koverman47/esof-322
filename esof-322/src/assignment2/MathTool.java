@@ -1,6 +1,8 @@
 package assignment2;
 
-
+/*
+ * MathTool is abstract so that it can't be instantiated
+ */
 public abstract class MathTool {
     protected SortBehavior sortBehavior;
     

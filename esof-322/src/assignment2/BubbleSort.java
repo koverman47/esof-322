@@ -17,6 +17,10 @@ public class BubbleSort implements SortBehavior {
                     swap = true;
                 }
             }
+            
+            /*
+             * If no swaps made, assume sorted - return
+             */
             if(!swap) {
                 return data;
             }
