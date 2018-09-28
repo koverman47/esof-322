@@ -1,6 +1,5 @@
 package assignment2;
 
-
 public class MergeSort implements SortBehavior {
 
     public MergeSort() {}
@@ -12,27 +11,21 @@ public class MergeSort implements SortBehavior {
             return data;
         }
         
-        /*
-         * Divide / partition
-         */
+        // Divide / partition
         int middle = data.length / 2;
         
         int[] left = new int[middle];
         int[] right = new int[middle + (data.length % 2 == 0 ? 0 : 1)];
         
-        System.arraycopy(data, 0, left, 0, left.length); // Create 'left' partition
-        System.arraycopy(data, left.length, right, 0, right.length); // Create 'right' partition
+        // Create 2 partitions
+        System.arraycopy(data, 0, left, 0, left.length); 
+        System.arraycopy(data, left.length, right, 0, right.length);
         
-        /*
-         * Recursively sort two partitions
-         */
+        // Recursively sort two partitions
         left = sort(left);
         right = sort(right);
         
-        
-        /*
-         * Conquer / merge
-         */
+        // Conquer / merge
         int x = 0;
         int y = 0;
         int counter = 0; // loop invariant := counter = x + y
@@ -47,16 +40,12 @@ public class MergeSort implements SortBehavior {
                 sorted[counter++] = right[y++];
             }
         }
-        
         while(x < left.length) {
             sorted[counter++] = left[x++];
         }
-        
         while(y < right.length) {
             sorted[counter++] = right[y++];
         }
-     
         return sorted;
     }
-    
 }
